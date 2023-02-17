@@ -1,0 +1,26 @@
+{
+    "statusCode": 400,
+    "headers": {
+        "Pragma": "no-cache",
+        "Cache-Control": "no-cache",
+        "Date": "Fri, 17 Feb 2023 11:59:32 GMT",
+        "Server": "Microsoft-IIS/10.0",
+        "X-Powered-By": "ASP.NET",
+        "Content-Length": "3116",
+        "Content-Type": "application/json",
+        "Expires": "-1"
+    },
+    "body": {
+        "Code": "IncorrectLiquidTransformOutputType",
+        "Message": "An error occurred while converting the transformed value to JSON. The transformed value is not a valid JSON. 'Additional text encountered after finished reading JSON content: :. Path '', line 1, position 13.'",
+        "Details": [
+            {
+                "Code": "IncorrectLiquidTransformOutputType",
+                "Message": "{\"StatusCode\":400,\"ErrorCode\":18,\"Details\":null,\"Message\":\"An error occurred while converting the transformed value to JSON. The transformed value is not a valid JSON. 'Additional text encountered after finished reading JSON content: :. Path '', line 1, position 13.'\",\"Data\":{},\"InnerException\":{\"ClassName\":\"Newtonsoft.Json.JsonReaderException\",\"Message\":\"Additional text encountered after finished reading JSON content: :. Path '', line 1, position 13.\",\"Data\":null,\"InnerException\":null,\"HelpURL\":null,\"StackTraceString\":\"   at Newtonsoft.Json.JsonTextReader.Read()\\r\\n   at Newtonsoft.Json.Linq.JToken.Parse(String json, JsonLoadSettings settings)\\r\\n   at Microsoft.Azure.Function.Common.BaseLiquidTransformer.ParseTransformedContent(String transformedContent, JSchema schema) in C:\\\\__w\\\\1\\\\s\\\\src\\\\functions\\\\Scripts\\\\Function.Common\\\\Liquid\\\\BaseLiquidTransformer.cs:line 127\",\"RemoteStackTraceString\":null,\"RemoteStackIndex\":0,\"ExceptionMethod\":\"8\\nRead\\nNewtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed\\nNewtonsoft.Json.JsonTextReader\\nBoolean Read()\",\"HResult\":-2146233088,\"Source\":\"Newtonsoft.Json\",\"WatsonBuckets\":null},\"TargetSite\":{\"Name\":\"ParseTransformedContent\",\"AssemblyName\":\"Microsoft.Azure.Function.Common, Version=1.6.12.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35\",\"ClassName\":\"Microsoft.Azure.Function.Common.BaseLiquidTransformer\",\"Signature\":\"Newtonsoft.Json.Linq.JToken ParseTransformedContent(System.String, Newtonsoft.Json.Schema.JSchema)\",\"Signature2\":\"Newtonsoft.Json.Linq.JToken ParseTransformedContent(System.String, Newtonsoft.Json.Schema.JSchema)\",\"MemberType\":8,\"GenericArguments\":null},\"StackTrace\":\"   at Microsoft.Azure.Function.Common.BaseLiquidTransformer.ParseTransformedContent(String transformedContent, JSchema schema) in C:\\\\__w\\\\1\\\\s\\\\src\\\\functions\\\\Scripts\\\\Function.Common\\\\Liquid\\\\BaseLiquidTransformer.cs:line 133\\r\\n   at Microsoft.Azure.Function.LiquidTransform.LiquidTransformRequestProcessor.GetTransformedContentResponseMessage(HttpRequestMessage request, LiquidTransformKind transformKind, String transformedContent, JSchema outputSchema) in C:\\\\__w\\\\1\\\\s\\\\src\\\\functions\\\\Scripts\\\\Function.LiquidTransform\\\\LiquidTransformRequestProcessor.cs:line 91\\r\\n   at Microsoft.Azure.Function.LiquidTransform.LiquidTransformRequestProcessor.<ProcessRequest>d__2.MoveNext() in C:\\\\__w\\\\1\\\\s\\\\src\\\\functions\\\\Scripts\\\\Function.LiquidTransform\\\\LiquidTransformRequestProcessor.cs:line 60\",\"HelpLink\":null,\"Source\":\"Microsoft.Azure.Function.Common\",\"HResult\":-2146233088}",
+                "Details": null,
+                "InnerError": null
+            }
+        ],
+        "InnerError": null
+    }
+}

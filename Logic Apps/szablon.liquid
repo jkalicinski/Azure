@@ -1,0 +1,16 @@
+{
+"content": [
+{% for i in content %}
+  {
+  "id" : "{{ i.id }}",
+  "ibanFrom" : "{{ i.ibanFrom }}",
+  "ibanTo" : "{{ i.ibanTo }}",
+  "amount" : {{ i.amount }},
+  "year": {{ i.date | Date: 'yyyy' }},
+  "month": {{ i.date | Date: 'MM' }},
+  "day": {{ i.date | Date: 'dd' }}
+  }
+  {% if forloop.last == false %},{% endif %}
+{% endfor %}
+]
+}
